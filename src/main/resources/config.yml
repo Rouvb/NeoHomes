@@ -1,0 +1,35 @@
+blacklisted:
+  words:
+    - "Rouvb"
+  worlds:
+    - "spawn"
+
+home:
+  countdown: 5
+  cancel_on_damage: true
+  cancel_on_move: true
+
+gui:
+  title: "Homes"
+  layout: |-
+    # # # # # # # # #
+    # x x x x x x x #
+    # x x x x x x x #
+    # x x x x x x x #
+    # # < # # # > # #
+  items:
+    background:
+      name: ""
+      material: "GRAY_STAINED_GLASS_PANE"
+    previous_page:
+      name: "&bPrevious Page"
+      material: "ARROW"
+    next_page:
+      name: "&bNext Page"
+      material: "ARROW"
+    home:
+      name: "&b<home>"
+      lore: |-
+        &aLeft click to teleport to home
+        &aRight click to delete a home
+      material: "BLUE_BED"

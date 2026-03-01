@@ -1,0 +1,24 @@
+home:
+  not_found: "&cYou do not have a home with that name."
+  deleted: "&aYou have deleted home &e<home>&a."
+  set: "&aYou have set a new home named &e<home>&a."
+
+teleport:
+  starting: "&aTeleporting in &e<time> &aseconds..."
+  cancelled:
+    moved: "&cTeleportation cancelled because you moved."
+    damaged: "&cTeleportation cancelled because you took damage."
+  success: "&aYou have teleported to home &e<home>&a."
+
+command:
+  delhome:
+    usage: "&cPlease specify a home name."
+  sethome:
+    usage: "&cPlease specify a home name."
+  home:
+    usage: "&cPlease specify a home name."
+
+errors:
+  max_limit: "&cYou cannot set home limit to the maximum."
+  blacklisted_world: "&cYou cannot set a home in this world."
+  blacklisted_word: "&cThat home name contains a blacklisted word."

@@ -1,0 +1,6 @@
+name: NeoHomes
+version: '1.0.0'
+main: io.github.rouvb.neoHomes.NeoHomes
+api-version: '1.21'
+author: Rouvb
+description: A lightweight GUI-based multiple homes plugin
