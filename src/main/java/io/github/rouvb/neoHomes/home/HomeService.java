@@ -43,8 +43,10 @@ public class HomeService {
 
                 if (countdown <= 0) {
                     player.teleport(home.getLocation());
-                    player.sendMessage(ColorParser.of(Lang.TELEPORT_SUCCESS.getPath())
+                    player.sendMessage(ColorParser.of(configManager.getLang().getString(Lang.TELEPORT_SUCCESS.getPath()))
                             .with("home", home.getHomeName()).legacy().build());
+                    cancel();
+                    return;
                 }
 
                 player.sendMessage(ColorParser.of(configManager.getLang().getString(Lang.TELEPORT_STARTING.getPath()))
