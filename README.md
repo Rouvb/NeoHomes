@@ -4,8 +4,9 @@
 ## Features
 - Multiple homes per player
 - GUI-based home selection
-- Support SQLite storage
-- Simple and clean commands
+- SQLite storage
+- Permission-based home limits
+- No unnecessary dependencies
 
 ## Requirements
 - Java 21 or higher
@@ -13,20 +14,22 @@
 - No external dependencies required
 
 ## Commands
-| Command            | Permission         |
-|--------------------|--------------------|
-| `/sethome <home>`  | `neohomes.sethome` |
-| `/home [home]`     | `neohomes.home`    |
-| `/delhome <home>`  | `neohomes.delhome` |
-| `/neohomes reload` | `neohomes.admin`   |
+| Command            | Permission         | Description          |
+|--------------------|--------------------|----------------------|
+| `/sethome <home>`  | `neohomes.sethome` | Set a new home       |
+| `/home [home]`     | `neohomes.home`    | Teleport to a home   |
+| `/delhome <home>`  | `neohomes.delhome` | Delete a home        |
+| `/neohomes reload` | `neohomes.admin`   | Reload configuration |
 
 ## Permissions
-- `neohomes.sethome` — Allows setting homes
-- `neohomes.home` — Allows teleporting to homes
-- `neohomes.delhome` — Allows deleting homes
-- `neohomes.limit.*` — Unlimited home limit
-- `neohomes.limit.int` — Limited number of homes
-- `neohomes.admin` — Administrative commands permission
+| Permission                | Description                 |
+|---------------------------|-----------------------------|
+| `neohomes.sethome`        | Allows setting homes        |
+| `neohomes.home`           | Allows teleporting to homes |
+| `neohomes.delhome`        | Allows deleting homes       |
+| `neohomes.limit.*`        | Removes home limit          |
+| `neohomes.limit.<number>` | Limits number of homes      |
+| `neohomes.admin`          | Access to admin commands    |
 
 ## Credits
 - [ACF (Annotation Command Framework)](https://github.com/aikar/commands)
