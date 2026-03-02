@@ -10,6 +10,9 @@
 - Blacklisted words filter for home names
 - No unnecessary dependencies
 
+## GUI
+![gui](https://i.imgur.com/YDyvHGB.png)
+
 ## Requirements
 - Java 21 or higher
 - Paper (or Paper-compatible) server
