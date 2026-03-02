@@ -6,6 +6,8 @@
 - GUI-based home selection
 - SQLite storage
 - Permission-based home limits
+- Blacklisted worlds support (prevent home creation in specific worlds)
+- Blacklisted words filter for home names
 - No unnecessary dependencies
 
 ## Requirements
