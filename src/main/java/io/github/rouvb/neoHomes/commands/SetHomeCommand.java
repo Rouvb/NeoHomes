@@ -15,7 +15,7 @@ import io.github.rouvb.neoHomes.profile.manager.ProfileManager;
 import org.bukkit.entity.Player;
 
 @CommandAlias("sethome")
-@CommandPermission("neohome.sethome")
+@CommandPermission("neohomes.sethome")
 public class SetHomeCommand extends BaseCommand {
 
     private final ConfigManager configManager;
@@ -47,7 +47,7 @@ public class SetHomeCommand extends BaseCommand {
         }
 
         // Maximum Limit
-        if (profile.getHomes().size() > profile.getHomeLimit(sender.getUniqueId())) {
+        if (profile.getHomes().size() >= profile.getHomeLimit(sender.getUniqueId())) {
             sender.sendMessage(ColorParser.of(configManager.getLang().getString(Lang.ERROR_MAX_LIMIT.getPath()))
                     .legacy().build());
             return;
