@@ -67,8 +67,8 @@ public class SetHomeCommand extends BaseCommand {
             return;
         }
 
-        profile.addHome(String.join(" ", homeName), sender.getLocation());
+        profile.addHome(homeNameStr, sender.getLocation());
         sender.sendMessage(ColorParser.of(configManager.getLang().getString(Lang.HOME_SET.getPath()))
-                .with("home", String.join(" ", homeName)).legacy().build());
+                .with("home", homeNameStr).legacy().build());
     }
 }
