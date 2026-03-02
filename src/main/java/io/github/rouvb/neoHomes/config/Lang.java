@@ -15,7 +15,7 @@ public enum Lang {
     COMMAND_SETHOME_USAGE("command.sethome.usage"),
     COMMAND_HOME_USAGE("command.home.usage"),
     ERROR_MAX_LIMIT("error.max_limit"),
-    ERROR_BLACKLISTED_WORLD("errors.blacklisted"),
+    ERROR_BLACKLISTED_WORLD("errors.blacklisted_world"),
     ERROR_BLACKLISTED_WORD("errors.blacklisted_word");
 
     private final String path;
