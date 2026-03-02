@@ -7,7 +7,6 @@ teleport:
   starting: "&aTeleporting in &e<time> &aseconds..."
   cancelled:
     moved: "&cTeleportation cancelled because you moved."
-    damaged: "&cTeleportation cancelled because you took damage."
   success: "&aYou have teleported to home &e<home>&a."
 
 command:
