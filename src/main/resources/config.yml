@@ -6,17 +6,10 @@ blacklisted:
 
 home:
   countdown: 5
-  cancel_on_damage: true
   cancel_on_move: true
 
 gui:
   title: "Homes"
-  layout: |-
-    # # # # # # # # #
-    # x x x x x x x #
-    # x x x x x x x #
-    # x x x x x x x #
-    # # < # # # > # #
   items:
     background:
       name: ""

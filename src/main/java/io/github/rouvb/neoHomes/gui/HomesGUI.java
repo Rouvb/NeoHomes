@@ -39,7 +39,13 @@ public class HomesGUI {
         List<Item> homeItems = getHomeItems(profile);
 
         Gui gui = PagedGui.items()
-                .setStructure(configManager.getConfig().getString(Config.GUI_LAYOUT.getPath()))
+                .setStructure(
+                        "# # # # # # # # #",
+                        "# x x x x x x x #",
+                        "# x x x x x x x #",
+                        "# x x x x x x x #",
+                        "# # < # # # > # #"
+                )
                 .addIngredient('x', Markers.CONTENT_LIST_SLOT_HORIZONTAL)
                 .addIngredient('#', border)
                 .addIngredient('<', new BackItem(configManager))
